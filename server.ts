@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import * as path from "path";
 import { Pool } from "pg";
+require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 3000;
 const indexPath = path.join(__dirname, "./public/index.html");
@@ -14,10 +15,10 @@ app.use(
 app.get("/", (req: Request, res: Response) => res.sendFile(indexPath));
 
 const credentials = {
-	user: "postgres",
-	host: "localhost",
-	database: "assignment",
-	password: "P@ssword@123",
+	user: process.env.DB_USER,
+	host: process.env.DB_HOST,
+	database: process.env.DB_NAME,
+	password: process.env.DB_PASS,
 	port: 5432,
 };
 
