@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+
+		<!-- <link rel="stylesheet" href="./styles.css" /> -->
+		<style>
+			.col-lg > button {
+				margin-top: 10px;
+				margin-bottom: 10px;
+				width: 100%;
+			}
+		</style>
+
+		<title>Table</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg">
+					<button
+						id="loadData"
+						type="button"
+						class="btn btn-primary"
+						onclick="loadData()"
+					>
+						Load Data
+					</button>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">First Name</th>
+								<th scope="col">Middle Name</th>
+								<th scope="col">Last Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Phone Number</th>
+								<th scope="col">Role</th>
+								<th scope="col">Address</th>
+								<th scope="col">Edit</th>
+								<th scope="col">Delete</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody"></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg">
+					<form id="addForm">
+						<div class="form-group">
+							<label for="firstNameInput">First Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="firstNameInput"
+								placeholder="First Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="middleNameInput">Middle Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="middleNameInput"
+								placeholder="Middle Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="lastNameInput">Last Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="lastNameInput"
+								placeholder="Last Name"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="emailInput">Email address</label>
+							<input
+								type="email"
+								class="form-control"
+								id="emailInput"
+								aria-describedby="emailHelp"
+								placeholder="Email"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="phoneNumberInput">Phone Number</label>
+							<input
+								type="text"
+								class="form-control"
+								id="phoneNumberInput"
+								placeholder="Phone Number"
+							/>
+						</div>
+						<div class="form-group">
+							<label for="addressInput">Role</label><br />
+							<div id="roleInput" class="btn-group btn-group-toggle" data-toggle="buttons">
+								<label class="btn btn-secondary active">
+									<input
+										type="radio"
+										name="roleInput"
+										id="superAdmin"
+										autocomplete="off"
+										checked
+									/>
+									Super Admin
+								</label>
+								<label class="btn btn-secondary">
+									<input
+										type="radio"
+										name="roleInput"
+										id="admin"
+										autocomplete="off"
+									/>
+									Admin
+								</label>
+								<label class="btn btn-secondary">
+									<input
+										type="radio"
+										name="roleInput"
+										id="subscriber"
+										autocomplete="off"
+									/>
+									Subscriber
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="addressInput">Address</label>
+							<input
+								type="text"
+								class="form-control"
+								id="addressInput"
+								placeholder="Address"
+							/>
+						</div>
+						<label> </label>
+						<button type="button" class="btn btn-primary" onclick="addData()">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script> let exports = {}; </script>
+		<script src="./index.js"></script>
+	</body>
+</html>

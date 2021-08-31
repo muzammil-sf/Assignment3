@@ -1,0 +1,42 @@
+[
+	{
+		"id": "1",
+		"fname": "Aniket",
+		"mname": "Pratap",
+		"lname": "Suresh",
+		"email": "anikelsuresh@sourcefuse.com",
+		"pno": "+918582803048",
+		"role": "SuperAdmin",
+		"address": "38697 Dortha Village"
+	},
+	{
+		"id": "2",
+		"fname": "Rajesh",
+		"mname": "Deepak",
+		"lname": "Grewal",
+		"email": "rajeshgrewal@sourcefuse.com",
+		"pno": "+915855544316",
+		"role": "Admin",
+		"address": "38846 Jerrell Unions"
+	},
+	{
+		"id": "3",
+		"fname": "Rani",
+		"mname": "Ayush",
+		"lname": "Bedi",
+		"email": "ranibedi@sourcefuse.com",
+		"pno": "+913797197883",
+		"role": "Subscriber",
+		"address": "435 Prosacco Station"
+	},
+	{
+		"id": "4",
+		"fname": "Amit",
+		"mname": "Siddharth",
+		"lname": "Kothari",
+		"email": "amitkothari@sourcefuse.com",
+		"pno": "+915233239902",
+		"role": "Subscriber",
+		"address": "620 Peyton Vista"
+	}
+]
